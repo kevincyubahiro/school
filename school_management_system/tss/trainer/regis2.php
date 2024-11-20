@@ -101,7 +101,6 @@ input:focus, button:focus {
     let dobDate = new Date(dob);
     let today = new Date();
     if (dobDate >= today) {
-        alert("Please enter a valid date of birth in the past.");
         return;
     }
 

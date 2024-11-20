@@ -130,7 +130,7 @@
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Administration</a></li>
+                <li><a href="skl_mng.html">Administration</a></li>
                 <li><a href="index.html">Services</a></li>
                 <li><a href="insert2.php">Trainer's</a></li>
                 <li><a href="#">Gallery</a></li>
@@ -151,7 +151,7 @@
         <h1>Welcome to Gikonko Technical Secondary School (GIKONKO TSS)</h1>
         
         <div class="tss">
-            <img src="tss.jpg" alt="Gikonko TSS">
+            <img src="tss.png" alt="Gikonko TSS">
         </div>
     </div>
 </body>
