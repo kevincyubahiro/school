@@ -97,6 +97,7 @@
         <h2>Login</h2>
         <input type="text" name="firstname" placeholder="First Name" required><br>
         <input type="text" name="secondname" placeholder="Second Name" required><br>
+       
         <input type="text" name="address" placeholder="Address" required><br>
         <input type="password" name="password" placeholder="Password" required><br>
         <button name="submit">Submit</button>
