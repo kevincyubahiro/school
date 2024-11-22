@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Form</title>
+    <title>Login Form As Developer student</title>
 
     <style>
         /* Global Reset */
@@ -109,7 +109,7 @@
 </head>
 <body>
     <form action="" method="post" autocomplete="off" onsubmit="validateForm(event)">
-        <h2>Login Form</h2>
+        <h2>Software Developers </h2>
         <input type="text" name="username" placeholder="Username" required><br><br>
         <input type="password" name="password" placeholder="Password" required><br><br>
         <button type="submit" name="submit">Login</button><br><br><br>

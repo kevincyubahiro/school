@@ -37,7 +37,7 @@
         a {
             text-decoration: none;
             color: white;
-            padding: 10px;
+            margin-left:-50px;
             margin: 0 15px;
             font-size: 18px;
             transition: color 0.3s ease;
@@ -50,7 +50,7 @@
         /* Login Button Styles */
         .lgt {
             position: absolute;
-            top: 20px;
+            top: 10px;
             right: 20px;
             font-size: 18px;
         }
@@ -285,14 +285,15 @@ footer {
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
+        <div class="lgt">
+        <button>
+            <a href="loginn.php" style="color: white; text-decoration: none;">Trainee's </a>
+        </button>
+    </div>
     </div>
 
     <!-- Login Button and Welcome Text -->
-    <div class="lgt">
-        <button>
-            <a href="loginn.php" style="color: white; text-decoration: none;">LOGOUT</a>
-        </button>
-    </div>
+    
 
     <div class="txt">
         <h1>Welcome to Gikonko Technical Secondary School (GIKONKO TSS)</h1>

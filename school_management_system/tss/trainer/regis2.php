@@ -72,10 +72,7 @@ input:focus, button:focus {
  <body>
     <form action="" method="post"auto_completed="off">
       <H2>Registration</H2>
-<input type="text" name="firstname"placeholder="firstname"required><br><br>
-<input type="text" name="secondname"placeholder="secondname"required><br><br>
-<input type="date"name="bod"><br><br><br>
-<input type="text" name="address"placeholder="address"required><br><br><br>
+<input type="text" name="username"placeholder="username"required><br><br>
 <input type="password" name="password"placeholder="password"required><br><br>
 <button name="submit">SUBMIT</button>
 
@@ -86,12 +83,9 @@ input:focus, button:focus {
  <?php
  include("conn.php");
  if(isset($_POST['submit'])){
-    $firstname=$_POST['firstname'];
-    $secondname=$_POST['secondname'];
-    $dob=$_POST['dob'];
-    $address=$_POST['address'];
+    $username=$_POST['username'];
     $password=$_POST['password'];
-    $insert=mysqli_query($conn,"INSERT INTO trainer VALUES('','$firstname','$secondname','$dob','$address','$password')");
+    $insert=mysqli_query($conn,"INSERT INTO student VALUES('','$username','$password')");
     if($insert){
     header("location:insert2.php");
     }

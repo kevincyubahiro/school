@@ -95,10 +95,8 @@
 <body>
     <form action="" method="post" autocomplete="off">
         <h2>Login</h2>
-        <input type="text" name="firstname" placeholder="First Name" required><br>
-        <input type="text" name="secondname" placeholder="Second Name" required><br>
-       
-        <input type="text" name="address" placeholder="Address" required><br>
+        <input type="text" name="username" placeholder="username" required><br>
+        
         <input type="password" name="password" placeholder="Password" required><br>
         <button name="submit">Submit</button>
         <a href="regis2.php">Create an Account</a>
@@ -110,16 +108,12 @@
  session_start();
  include("conn.php");
  if(isset($_POST['submit'])){
-    $firstname=$_POST['firstname'];
-    $secondname=$_POST['secondname'];
-    $address=$_POST['address'];
+    $username=$_POST['username'];
     $password=$_POST['password'];
-    $login=mysqli_query($conn,"SELECT * FROM trainer WHERE firstname='$firstname' AND secondname='$secondname' AND `address`='$address' AND `password`='$password'");
+    $login=mysqli_query($conn,"SELECT * FROM student WHERE username='$username'  AND `password`='$password'");
     $count=mysqli_num_rows($login);
     if($count){
-   $_SESSION=$_POST['firstname'];
-   $_SESSION=$_POST['secondname'];
-   $_SESSION=$_POST['address'];
+   $_SESSION=$_POST['username'];
    $_SESSION=$_POST['password'];
 header("location:galley.php");
     }
