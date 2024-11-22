@@ -74,7 +74,8 @@ input:focus, button:focus {
       <H2>Registration</H2>
 <input type="text" name="username"placeholder="username"required><br><br>
 <input type="password" name="password"placeholder="password"required><br><br>
-<button name="submit">SUBMIT</button>
+<button name="submit">SUBMIT</button> <br><br>
+<a href="insert2.php">cancel</a>
 
     </form>
    

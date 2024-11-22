@@ -277,11 +277,11 @@ footer {
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="skl_mng.html">Administration</a></li>
+                <li><a href="kk.html">Administration</a></li>
                 <li><a href="index.html">Services</a></li>
                 <li><a href="insert2.php">Trainer's</a></li>
                 <li><a href="#">Gallery</a></li>
-                <li><a href="#">About Us</a></li>
+                <li><a href="about us.html">About Us</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>

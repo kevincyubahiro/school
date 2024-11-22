@@ -94,7 +94,7 @@
 </head>
 <body>
     <form action="" method="post" autocomplete="off">
-        <h2>Login</h2>
+        <h2>Login as Trainer's</h2>
         <input type="text" name="username" placeholder="username" required><br>
         
         <input type="password" name="password" placeholder="Password" required><br>
