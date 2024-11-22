@@ -280,7 +280,7 @@ footer {
                 <li><a href="kk.html">Administration</a></li>
                 <li><a href="index.html">Services</a></li>
                 <li><a href="insert2.php">Trainer's</a></li>
-                <li><a href="#">Gallery</a></li>
+                <li><a href="pay.php">school fees</a></li>
                 <li><a href="about us.html">About Us</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>

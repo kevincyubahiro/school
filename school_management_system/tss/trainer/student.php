@@ -1,11 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Form As Developer student</title>
+ <html lang="en">
+ <head>
 
-    <style>
+ <style>
         /* Global Reset */
         * {
             margin: 0;
@@ -24,10 +21,10 @@
             margin: 0;
         }
 
-        /* Form Container Styling */
+        /* Form Styling */
         form {
             background-color: #fff;
-            padding: 30px;
+            padding: 40px;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             width: 100%;
@@ -36,7 +33,7 @@
         }
 
         h2 {
-            font-size: 24px;
+            font-size: 26px;
             margin-bottom: 20px;
             color: #333;
         }
@@ -44,8 +41,8 @@
         /* Input Fields Styling */
         input[type="text"], input[type="password"] {
             width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
+            padding: 12px;
+            margin-bottom: 20px;
             border: 1px solid #ccc;
             border-radius: 5px;
             font-size: 16px;
@@ -57,10 +54,21 @@
         }
 
         /* Button Styling */
+        .cncl button{
+         width: 40%;
+            padding: 12px;
+            background-color: red;
+           
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            
+         
+        }
         button {
             width: 100%;
             padding: 12px;
-            background-color: #007BFF;
+            background-color: #28a745;
             color: white;
             font-size: 16px;
             border: none;
@@ -70,10 +78,10 @@
         }
 
         button:hover {
-            background-color: #0056b3;
+            background-color: #218838;
         }
 
-        /* Link Styling */
+        /* Link Styling (optional) */
         a {
             display: block;
             margin-top: 15px;
@@ -84,13 +92,6 @@
 
         a:hover {
             text-decoration: underline;
-        }
-
-        /* Error Message Styling */
-        .error {
-            color: red;
-            font-size: 14px;
-            margin-top: 10px;
         }
 
         /* Responsiveness */
@@ -104,38 +105,44 @@
             }
         }
     </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <form action="loginn.php" method="post"auto_compeleted="off">
+      <H2>payment</H2>
+<input type="text" name="username"placeholder="username"required><br><br>
+<input type="text" name="code"placeholder="Enter student code"required><br><br>
+<input type="number" name="amount"placeholder="Enter amount your want to payment"required><br><br>
+<input type="text" name="number"placeholder="Enter your telephone number"required><br><br>
+<input type="password" name="password"placeholder="password"required><br><br>
+<button name="submit">COMFIRM</button><br><br>
+<div class="cncl">
+<a href="pay.php">cancel</a>
+</div>
 
 
-</head>
-<body>
-    <form action="" method="post" autocomplete="off" onsubmit="validateForm(event)">
-        <h2>Software Developers </h2>
-        <input type="text" name="username" placeholder="Username" required><br><br>
-        <input type="password" name="password" placeholder="Password" required><br><br>
-        <button type="submit" name="submit">Login</button><br><br><br>
-        <a href="create.php">Create Account</a>
-
-        <!-- Error message container -->
-        <div class="error"></div>
     </form>
-</body>
-</html>
-
+ </body>
+ </html>
  <?php
- session_start();
  include("conn.php");
  if(isset($_POST['submit'])){
     $username=$_POST['username'];
+    $code=$_POST['code'];
+    $amount=$_POST['amount'];
+    $number=$_POST['number'];
     $password=$_POST['password'];
-    $login=mysqli_query($conn,"SELECT * FROM trainers WHERE username='$username'AND `password`='$password'");
-    $count=mysqli_num_rows($login);
-    if($count){
-        $_SESSION=$_POST['username'];
-        $_SESSION=$_POST['password'];
-        header("location:pdf.php");
-    }  
+    $insert=mysqli_query($conn,"INSERT INTO student_payment VALUES('','$username','$code','$amount','$number','$password')");
+    if($insert){
+      header("location:loginn.php");
+    }
     else{
-        echo"wrong credintail";
+      
+      echo "<script>alert('This person Already Exist try to create account');</script>";
+      
+      
     }
  }
  ?>

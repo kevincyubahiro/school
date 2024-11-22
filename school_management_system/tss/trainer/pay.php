@@ -33,7 +33,7 @@ h1 {
 .payment-options {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 55px;
 }
 
 .payment-option {
@@ -53,9 +53,12 @@ h1 {
     cursor: pointer;
     padding: 10px;
     border-radius: 5px;
-    border: 1px solid #ddd;
+    border: 10px solid #ddd;
     background-color: #f9f9f9;
     transition: background-color 0.3s ease;
+}
+img{
+    height:20%;
 }
 
 .payment-option label:hover {
@@ -86,7 +89,9 @@ h1 {
     background-color: #ccc;
     cursor: not-allowed;
 }
-
+li{
+   list-style-type: none; 
+}
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -95,27 +100,29 @@ h1 {
 </head>
 <body>
     <div class="container">
-        <h1>Choose Your Payment Method</h1>
+        <h1>Choose Payment school fees </h1>
         <div class="payment-options">
             <div class="payment-option">
                 <input type="radio" id="credit-card" name="payment" value="credit-card">
                 <label for="credit-card">
-                    <img src="momo.png" alt="Credit Card">
-                    <p>Credit Card</p>
+                    <li><a href="student.php"><img src="bpr.jpg" alt="Credit Card"></a></li>
+                    
+                    <p>bpr Bank</p>
+                   
                 </label>
             </div>
             <div class="payment-option">
                 <input type="radio" id="paypal" name="payment" value="paypal">
                 <label for="paypal">
-                    <img src="momo.png" alt="PayPal">
-                    <p>PayPal</p>
+                <li><a href="student.php"><img src="umwarimu.png" alt="Credit Card"></a></li><br>
+                    <p>umwalimu sacco</p><br><br>
                 </label>
             </div>
             <div class="payment-option">
                 <input type="radio" id="bank-transfer" name="payment" value="bank-transfer">
                 <label for="bank-transfer">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Bank_Transfer_Logo.svg" alt="Bank Transfer">
-                    <p>Bank Transfer</p>
+                    <li><a href="student.php"><img src="momo.png" alt="Credit Card"></a></li>
+                    <p>Mobile momey</p>
                 </label>
             </div>
         </div>
