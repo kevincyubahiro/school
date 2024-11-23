@@ -99,9 +99,35 @@
                 font-size: 1rem;
             }
         }
+        li{
+            list-style-type: none;
+           
+            
+        }
+        button{
+            height: 40%;
+            width: 10%;
+            padding:10px;
+            
+            margin:10px;
+            background-color: blue;
+        }
+        a{
+            color:white;
+            
+            text-decoration:none;
+        }
+        
     </style>
 </head>
 <body>
+    <button><a href="image.php">back</a></button>
+
+    
+
+   
+    <a href="loginn.php" style="background-color:red;height:100px;">cancel</a></button>
+    
     <!-- Header Section -->
     <header>
         <h1>blockchain courses</h1>

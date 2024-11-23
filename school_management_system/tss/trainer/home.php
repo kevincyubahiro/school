@@ -276,8 +276,8 @@ footer {
     <div class="nav_bar">
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="kk.html">Administration</a></li>
+                <li><a href="home.php">Home</a></li>
+                <li><a href="admin.php">Administration</a></li>
                 <li><a href="index.html">Services</a></li>
                 <li><a href="insert2.php">Trainer's</a></li>
                 <li><a href="pay.php">school fees</a></li>
